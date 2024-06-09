@@ -38,3 +38,7 @@
 	path = TidepoolService
 	url = https://github.com/loopandlearn/TidepoolService.git
 	branch = trio
+	url = https://github.com/LoopKit/TidepoolService.git
+[submodule "MedtrumKit"]
+	path = MedtrumKit
+	url = git@github.com:jbr7rr/MedtrumKit.git
