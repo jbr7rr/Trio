@@ -3,6 +3,7 @@ import Combine
 import Foundation
 import LoopKit
 import LoopKitUI
+import MedtrumKit
 import MinimedKit
 import MockKit
 import OmniBLE
@@ -30,6 +31,7 @@ protocol DeviceDataManager: GlucoseSource {
 }
 
 private let staticPumpManagers: [PumpManagerUI.Type] = [
+    MedtrumPumpManager.self,
     MinimedPumpManager.self,
     OmnipodPumpManager.self,
     OmniBLEPumpManager.self,
@@ -37,6 +39,7 @@ private let staticPumpManagers: [PumpManagerUI.Type] = [
 ]
 
 private let staticPumpManagersByIdentifier: [String: PumpManagerUI.Type] = [
+    MedtrumPumpManager.pluginIdentifier: MedtrumPumpManager.self,
     MinimedPumpManager.pluginIdentifier: MinimedPumpManager.self,
     OmnipodPumpManager.pluginIdentifier: OmnipodPumpManager.self,
     OmniBLEPumpManager.pluginIdentifier: OmniBLEPumpManager.self,

@@ -7,6 +7,7 @@ enum PumpConfig {
 
     enum PumpType: Equatable {
         case minimed
+        case medtrum
         case omnipod
         case omnipodBLE
         case simulator
